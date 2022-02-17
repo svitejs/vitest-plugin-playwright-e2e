@@ -5,9 +5,14 @@
   "author": "dominikg",
   "private": true,
   "type": "module",
-  "main": "dist/index.cjs",
+  "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "virtual",
+    "package.json"
+  ],
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -34,10 +39,13 @@
   },
   "homepage": "https://github.com/svitejs/vitest-plugin-playwright-e2e/tree/main/packages/vitest-plugin-playwright-e2e#readme",
   "peerDependencies": {
-    "vite": "^2.7.9"
+    "vite": "^2.8.3",
+    "vitest": "^0.3.6",
+    "playwright": "^1.19.1"
   },
   "devDependencies": {
     "vite": "^2.8.1",
-    "vitest": "^0.3.4"
+    "vitest": "^0.3.4",
+    "playwright": "^1.19.1"
   }
 }
