@@ -1,6 +1,6 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@1.5.0/schema.json",
-  "changelog": ["@svitejs/changesets-changelog-github-compact", { "repo": "svitejs/vite-plugin-template" }],
+  "changelog": ["@svitejs/changesets-changelog-github-compact", { "repo": "svitejs/vitest-plugin-playwright-e2e" }],
   "commit": false,
   "linked": [],
   "access": "public",

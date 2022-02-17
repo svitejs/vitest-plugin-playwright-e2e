@@ -1,11 +1,11 @@
-# @svitejs/vite-plugin-template
+# @svitejs/vitest-plugin-playwright-e2e
 
 PROJECT TAGLINE HERE
 
 ## Installation
 
 ```bash
-pnpm i -D @svitejs/vite-plugin-template
+pnpm i -D @svitejs/vitest-plugin-playwright-e2e
 ```
 
 ## Usage
@@ -15,11 +15,11 @@ pnpm i -D @svitejs/vite-plugin-template
 ```ts
 // vite config
 import { defineConfig } from 'vite';
-import { pluginFunction } from '@svitejs/vite-plugin-template';
+import { vitestPluginPlaywrightEe } from '@svitejs/vitest-plugin-playwright-e2e';
 
 export default defineConfig({
 	plugins: [
-		pluginFunction({
+		vitestPluginPlaywrightEe({
 			/* plugin options */
 		})
 	]

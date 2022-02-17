@@ -1,9 +1,9 @@
 {
-  "name": "vite-plugin-template-monorepo",
+  "name": "vitest-plugin-playwright-e2e-monorepo",
   "private": true,
   "license": "MIT",
   "scripts": {
-    "dev": "pnpm --dir packages/vite-plugin-template dev",
+    "dev": "pnpm --dir packages/vitest-plugin-playwright-e2e dev",
     "build": "pnpm -r build",
     "test": "pnpm -r test --workspace-concurrency=1",
     "lint": "eslint --ignore-path .gitignore '**/*.{js,ts,html,md}'",
@@ -12,8 +12,7 @@
     "format:fix": "pnpm run format -- --write",
     "fixup": "run-s lint:fix format:fix",
     "release": "pnpm run build && pnpm changeset publish",
-    "prepare": "husky install",
-    "setup": "node scripts/initial-setup.cjs"
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@changesets/cli": "^2.20.0",
@@ -55,7 +54,7 @@
   },
   "pnpm": {
     "overrides": {
-      "@svitejs/vite-plugin-template": "workspace:*"
+      "@svitejs/vitest-plugin-playwright-e2e": "workspace:*"
     }
   }
 }

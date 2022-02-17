@@ -1,8 +1,8 @@
 {
-  "name": "@svitejs/vite-plugin-template",
+  "name": "@svitejs/vitest-plugin-playwright-e2e",
   "version": "0.0.0",
   "license": "MIT",
-  "author": "~~AUTHOR~~",
+  "author": "dominikg",
   "private": true,
   "type": "module",
   "main": "dist/index.cjs",
@@ -26,13 +26,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/svitejs/vite-plugin-template.git",
-    "directory": "packages/vite-plugin-template"
+    "url": "git+https://github.com/svitejs/vitest-plugin-playwright-e2e.git",
+    "directory": "packages/vitest-plugin-playwright-e2e"
   },
   "bugs": {
-    "url": "https://github.com/svitejs/vite-plugin-template/issues"
+    "url": "https://github.com/svitejs/vitest-plugin-playwright-e2e/issues"
   },
-  "homepage": "https://github.com/svitejs/vite-plugin-template/tree/main/packages/vite-plugin-template#readme",
+  "homepage": "https://github.com/svitejs/vitest-plugin-playwright-e2e/tree/main/packages/vitest-plugin-playwright-e2e#readme",
   "peerDependencies": {
     "vite": "^2.7.9"
   },

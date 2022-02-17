@@ -1,11 +1,11 @@
 name: "\U0001F41E Bug report"
-description: Report an issue with vite-plugin-template
+description: Report an issue with vitest-plugin-playwright-e2e
 labels: ["bug", "triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thank you for participating in vite-plugin-template! Please check for existing reports before creating a new one.
+        Thank you for participating in vitest-plugin-playwright-e2e! Please check for existing reports before creating a new one.
   - type: textarea
     id: bug-description
     attributes:
@@ -32,7 +32,7 @@ body:
     id: system-info
     attributes:
       label: System Info
-      description: Output of `npx envinfo --system --binaries --browsers --npmPackages "{@svitejs/vite-plugin-template}"`
+      description: Output of `npx envinfo --system --binaries --browsers --npmPackages "{@svitejs/vitest-plugin-playwright-e2e}"`
       render: shell
       placeholder: System, Binaries, Browsers
     validations:
@@ -45,6 +45,6 @@ body:
       options:
         - annoyance
         - blocking an upgrade
-        - blocking all usage of vite-plugin-template
+        - blocking all usage of vitest-plugin-playwright-e2e
     validations:
       required: true

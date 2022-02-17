@@ -8,14 +8,14 @@ const DEFAULT_OPTIONS: Options = {
 	// set default values
 };
 
-export function pluginFunction(inlineOptions?: Partial<Options>): Plugin {
+export function vitestPluginPlaywrightEe(inlineOptions?: Partial<Options>): Plugin {
 	// eslint-disable-next-line no-unused-vars
 	const options = {
 		...DEFAULT_OPTIONS,
 		...inlineOptions
 	};
 	return {
-		name: 'vite-plugin-template'
+		name: 'vitest-plugin-playwright-e2e'
 		// add hooks here
 	};
 }
