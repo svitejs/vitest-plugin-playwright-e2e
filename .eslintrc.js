@@ -17,7 +17,7 @@ module.exports = {
 		ecmaVersion: 2020
 	},
 	rules: {
-		'no-console': 'off',
+		'no-console': 'warn',
 		'no-debugger': 'error',
 		'node/no-deprecated-api': 'off',
 		'node/no-unpublished-import': 'off',

@@ -6,7 +6,9 @@ import { dirname, resolve } from 'path';
 
 const _dirname =
 	typeof __dirname !== 'undefined' ? __dirname : dirname(fileURLToPath(import.meta.url));
+// virtual is a sibling to src and dist so this path works both local and packaged
 const VIRTUAL_PATH = resolve(_dirname, '..', 'virtual');
+
 export function playwrightE2E(options?: any): Plugin {
 	let optionsPromise: Promise<string>;
 	const getOptions = () => {

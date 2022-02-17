@@ -5,9 +5,7 @@ export default async function () {
 	// @ts-expect-error foo
 	// eslint-disable-next-line node/no-missing-import
 	const options = (await import('virtual:playwright-e2e-launch-options')).default;
-	console.log('OPTIONS:', options);
 	const server = await chromium.launchServer(options);
-	console.log('SERVER:', server);
 	return async () => {
 		await Promise.allSettled([previewServer.httpServer.close(), server.close()]);
 	};
